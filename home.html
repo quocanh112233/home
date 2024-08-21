@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>My portfolio</title>
+    <style>
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #4da6ff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin-left: 20px;
+    color: white;
+}
+
+.nav {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 50px;
+    flex-grow: 1;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #4da6ff;
+    color: #4da6ff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #4da6ff;
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Quoc Anh</h1>
+        <div class="nav">
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#" id="projects-link">Projects</a>
+            <a href="#" id="contact-link">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <img src="Avatar.png" alt="Quoc Anh" class="profile-pic">
+        <h2>HELLO</h2>
+        <h3>I’m Quoc Anh</h3>
+        <a href="#" class="download-btn">Download CV</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Quoc Anh. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById("home-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("home-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("about-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("about-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("projects-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("projects-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("contact-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("contact-link").onmouseout = function() {this.style.color = "white"};
+    </script>
+</body>
+</html>
